@@ -24,7 +24,7 @@ export default class ListaItens extends Component {
 
     render() {
         return (
-            <ScrollView>
+            <ScrollView style={{ backgroundColor: '#ddd' }}>
                 { this.state.listaItens.map(item => (<Itens key={item.titulo} item={item} />))}
             </ScrollView>
         );
